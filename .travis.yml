@@ -1,7 +1,7 @@
 language: ruby
 install:
   - sudo apt-get install -y pure-ftpd-common pure-ftpd
-  - sudo groupadd pureftpd_group && useradd -g pureftpd_group -d /dev/null -s /etc pureftpd_user && touch /etc/pure-ftpd/pureftpd.passwd && pure-pw mkdb && ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/50pure && sed -i 's/inetd/standalone/g' /etc/default/pure-ftpd-common
+  # - sudo groupadd pureftpd_group && useradd -g pureftpd_group -d /dev/null -s /etc pureftpd_user && touch /etc/pure-ftpd/pureftpd.passwd && pure-pw mkdb && ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/50pure && sed -i 's/inetd/standalone/g' /etc/default/pure-ftpd-common
   - bundle install --no-ri --no-rdoc
 rvm:
   - 1.9.3
