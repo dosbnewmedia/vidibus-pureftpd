@@ -1,3 +1,5 @@
+install:
+  - sudo apt-get install -y pure-ftpd-common pure-ftpd
 rvm:
   - 1.9.3
   - 2.3
